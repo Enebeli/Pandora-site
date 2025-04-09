@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 body {
-  background-color: #fff;
-  color: #000;
+  background-color: #fff8f0;
+  color: #333;
   line-height: 1.6;
 }
 
@@ -16,7 +16,7 @@ h1, h2, p {
 }
 
 #hero {
-  background-image: url('https://via.placeholder.com/1200x400');
+  background-image: url('https://via.placeholder.com/1200x400/FFB6C1/000000?text=Pandora+Banner');
   background-size: cover;
   background-position: center;
   padding: 100px 0;
@@ -32,7 +32,7 @@ h1, h2, p {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.4);
   z-index: 1;
 }
 
@@ -41,6 +41,8 @@ h1, h2, p {
   z-index: 2;
   font-size: 4rem;
   font-weight: bold;
+  color: #ff4081;
+  text-shadow: 2px 2px #fff;
 }
 
 #top-download {
@@ -50,24 +52,35 @@ h1, h2, p {
 
 #download-btn-1,
 #download-btn-2 {
-  background-color: #ddd;
-  border: none;
-  padding: 10px 20px;
+  background-color: #ffd700;
+  border: 2px solid #ff69b4;
+  color: #000;
+  padding: 12px 24px;
   font-size: 1.2rem;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 30px;
   display: block;
   margin: 0 auto;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#download-btn-1:hover,
+#download-btn-2:hover {
+  background-color: #ff69b4;
+  color: #fff;
+  transform: scale(1.05);
 }
 
 #screenshots {
   text-align: center;
   padding: 40px 20px;
+  background-color: #e0f7fa;
 }
 
 #screenshots h2 {
   margin-bottom: 20px;
   font-size: 2rem;
+  color: #00838f;
 }
 
 #image-grid {
@@ -82,17 +95,21 @@ h1, h2, p {
   width: 200px;
   height: 200px;
   object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 4px 4px 15px rgba(0,0,0,0.2);
   background-color: #ccc;
 }
 
 #about {
   padding: 40px 20px;
   text-align: center;
+  background-color: #f3e5f5;
 }
 
 #about h2 {
   margin-bottom: 20px;
   font-size: 2rem;
+  color: #6a1b9a;
 }
 
 #about p {
@@ -100,14 +117,15 @@ h1, h2, p {
   margin: auto;
   font-size: 1rem;
   margin-bottom: 30px;
+  color: #4a148c;
 }
 
 #footer {
-  background-color: #f1f1f1;
+  background-color: #ffecb3;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
-  color: #555;
+  color: #5d4037;
 }
 
 @media (max-width: 768px) {
@@ -118,7 +136,7 @@ h1, h2, p {
   #download-btn-1,
   #download-btn-2 {
     font-size: 1rem;
-    padding: 8px 16px;
+    padding: 10px 20px;
   }
 
   #image-grid img {
