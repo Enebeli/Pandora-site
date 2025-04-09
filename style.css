@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  line-height: 1.6;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+#hero {
+  background-image: url('https://via.placeholder.com/1200x400');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+  color: #000;
+  position: relative;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 1;
+}
+
+#hero h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#top-download {
+  text-align: center;
+  margin: 40px 0;
+}
+
+#download-btn-1,
+#download-btn-2 {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+#screenshots {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#screenshots h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+#image-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#image-grid img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  background-color: #ccc;
+}
+
+#about {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#about h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+#about p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+#footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+
+  #download-btn-1,
+  #download-btn-2 {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  #image-grid img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero {
+    padding: 60px 0;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  #image-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #image-grid img {
+    width: 80%;
+    height: auto;
+  }
+
+  #about p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+}
