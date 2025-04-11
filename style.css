@@ -21,7 +21,7 @@ h1, h2, p {
 }
 
 #hero {
-  background-image: url('https://via.placeholder.com/1200x400/FFB6C1/000000?text=Pandora+Banner');
+  background-image: url('Hero.png');
   background-size: cover;
   background-position: center;
   padding: 100px 0;
@@ -104,6 +104,24 @@ h1, h2, p {
   box-shadow: 4px 4px 15px rgba(0,0,0,0.2);
   background-color: #ccc;
 }
+
+#gameplay-video {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#gameplay-video h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#gameplay-video video {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 
 #about {
   padding: 40px 20px;
