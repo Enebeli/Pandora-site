@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Gabriela', cursive, sans-serif;
 }
 
 body {
